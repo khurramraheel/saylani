@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <style>
+        #mover {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            width: 270px;
+        }
+    </style>
+
+    <script>
+
+        document.onkeydown = (evt) => {
+
+            switch (evt.keyCode) {
+
+                case 34:
+                    mover.style.left = (mover.offsetLeft + 5) + "px";
+                    break;
+
+                case 33:
+                    mover.style.left = (mover.offsetLeft - 5) + "px";
+                    break;
+
+                case 66:
+                    mover.style.top = (mover.offsetTop - 5) + "px";
+                    break;
+
+                case 27:
+                    mover.style.top = (mover.offsetTop + 5) + "px";
+                    break;
+
+
+
+            }
+
+        }
+
+
+    </script>
+
+    <img id="mover" src="./test.png" alt="">
+
+    <img width="1000" src="./1.png" alt="">
+
+</body>
+
+</html>
